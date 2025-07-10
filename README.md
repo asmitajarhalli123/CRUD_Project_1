@@ -69,6 +69,16 @@ Open the project in Eclipse, IntelliJ, or any IDE with Maven support.
 
 Run Main.java to start the app.
 
+💻 Dependencies
+
+ <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.7</version>
+        </dependency>
+    </dependencies>
+
 
 
 🧾 Features
