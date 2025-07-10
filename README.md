@@ -1,97 +1,132 @@
-# CRUD_Project_1
-Hotel Management System App (Console Based)
- A comprehensive Hotel Management System built using Java and Maven. This application facilitates efficient management of hotel operations, including room bookings, customer information, and more.
+## 🤝 Contributing (Team Members)
+1. Asmita Jarhalli (Team Leader)
+  
+2. Shivani Gajul
+   
+3. Saloni Yangundi
 
- ✅ Core Java (OOP, JDBC, Exception Handling)
 
- ✅ PostgreSQL Database
+--------------------------------------------
 
- ✅ Maven Project Structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 🛠️ 🏨 Hotel Management System – Java Maven Project
+
+The Hotel Management System is a comprehensive desktop application designed to streamline hotel operations such as room bookings, guest check-ins , check-outs, and invoice generation. Developed using Java and managed with Apache Maven, this project ensures efficient dependency management and a standardized build process.
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## 🚀 Features
+
+- 🛏️ Room booking and availability tracking
+- 🙋 Guest check-in/check-out management
+- 📧 Email confirmation for bookings (optional)
+- 🔒 Basic user authentication system (optional)
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## 🛠️ Tech Stack
+
+| Layer        | Technology     |
+|--------------|----------------|
+| Language     | Java           |
+| Build Tool   | Apache Maven   |
+| Database     | PostgreSQL          |
+
+
+
+
+
+
+
+
+
 
 📂 Project Structure Hotel-Management-System-app/
 
-└── src/
-    └── main/
-        ├── java/
-        │   └── org.example/
-        │       ├── Main.java
-        │       ├── dbconnect.java
-        │       ├── guest.java
-        │       ├── reservation.java
-        │       ├── rooms.java
-        │       └──
-        └── resources
-        └── db.properties
-        └──pom.xml
-        └──README.mdn
+<img width="572" height="493" alt="image" src="https://github.com/user-attachments/assets/17a4cace-5f51-43ce-b498-9ca83cd9c79f" />
 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 🗃️ Database Setup (PostgreSQL)
- Rooms
-create table rooms (
-  id SERIAL primary key,
-  room_number varchar(10) UNIQUE not null,
-  type varchar(50) not null,
-  price numeric(10,2) not null,
-  isavailable boolean not null
-);
-
- Guests
-create table guests (
-  id SERIAL primary key,
-  name varchar(100),
-  email VARCHAR(100) UNIQUE,
- );
-
-  Reservations
- create table reservations (
-   id SERIAL primary key,
-   room_id integer NOT NULL REFERENCES rooms(room_id),
-   guest_id integer NOT NULL REFERENCES guests(id),
-   check_in Date not null,
-   check_out Date not null,
- );
 
 
-⚙️ Configuration Edit the PostgreSQL credentials in DBConnection.java:
-
-String url = "jdbc:postgresql://localhost:5432/mydb";
-String user = "postgres";
-String password = "asmita123";
-
-
-🚀 How to Run Clone the repo or copy the project folder.
-
-Set up PostgreSQL and create the required tables.
-
-Open the project in Eclipse, IntelliJ, or any IDE with Maven support.
-
-Run Main.java to start the app.
-
-💻 Dependencies
-
- <dependencies>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.7.7</version>
-        </dependency>
-    </dependencies>
+<img width="803" height="731" alt="image" src="https://github.com/user-attachments/assets/6bc6cb95-da9b-46ec-8349-fdb577a4c882" />
 
 
 
-🧾 Features
-
-CRUD for bookings: create, view, book reservations
-
-Room availability tracking, preventing double-bookings
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
- 🧩 Contributers 
+## 🛠️ Dependencies  
+
+<img width="1015" height="340" alt="image" src="https://github.com/user-attachments/assets/3f8cf170-e48b-4467-8113-36271d68e764" />
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## 📸 Screenshots
+
+<img width="817" height="471" alt="image" src="https://github.com/user-attachments/assets/bcb567c2-d6cb-4cb2-bcde-ac95782ef33b" />
+
+
+
+## 🧩 Contact
+-------------------------
+
+For Any questions or feedback , feel free to reach out !
+
+Your Name : Asmita Jarhalli
+
+
+Email : asmitajarhalli@gmail.com
+
+
+-------
+
+
+
+
+
+
+
+
+
  
-🧑‍💻 Author Made with 💡 by Asmita Jarhalli 
-                      and 
-‍💻 Author Made with 💡 by Shivani Gajul
+
+ 
+
+
 
 
